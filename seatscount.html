@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seatscount</title>
+</head>
+<body>
+    
+    <script>
+
+        var memNum = prompt('How many person come in?');
+        var colNum = prompt('How many person seat in 1 line?');
+
+        if(memNum % colNum === 0)
+            rowNum = parseInt(memNum / colNum);
+        else
+            rowNum = parseInt(memNum / colNum) + 1;
+
+            document.write("you need to prepare " + rowNum + " lines for seat.")
+    </script>
+</body>
+</html>
