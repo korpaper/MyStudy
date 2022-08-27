@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for1</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        
+        div{
+            display: inline-block;
+            padding: 0 20px 30px 20px;
+            margin: 15px;
+            border: 1px solid #ccc;
+            line-height: 2;
+        }
+
+        div h3{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+<script>
+
+    /*var i;
+    var sum = 0;
+
+    for(i = 1; i < 6; i++){
+        sum += i;
+    }
+    document.write("1 + 2 + 3 + 4 + 5 =" + sum);*/
+
+    /*var i;
+    var sum = 0;
+
+    for(i = 1; i < 1001; i++){
+        sum += i;
+    }
+    document.write("1 + ~1000 =" + sum);*/
+
+    var i, j;
+
+    for(i = 1; i < 10; i++){
+        document.write("<div>");
+        document.write("<h3>" + i + "단</h3>");
+        for(j = 1; j < 10; j++){
+            document.write(i + "X" + j + "=" + i * j + "<br>");
+        }
+        document.write("</div>");
+    }
+
+</script>
+
+</body>
+</html>
