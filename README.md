@@ -1,1 +1,1 @@
-I just started git and github now.
+What I Learned everyday.
