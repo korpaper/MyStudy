@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제</title>
+</head>
+<body>
+	<h2>4의 배수일까 아닐까</h2>
+
+	<script>
+		//변수선언 //parseInt 정수변환
+		var userNumber = parseInt(prompt("숫자를 입력하세요."));
+		//조건문 작성 입력을 취소하지 않았다면 다음을 실행
+		if(userNumber !== null) {
+			//입력값과 4의 나머지가 0이면
+			if(userNumber % 4 === 0){
+				document.write(userNumber + "는 4의 배수입니다.");
+			} else {
+				document.write(userNumber + "는 4의 배수가 아닙니다.");
+			}
+		}
+	</script>
+</body>
+</html>

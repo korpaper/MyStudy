@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 2</title>
+	<style>
+		body {
+			font-size:1.2em;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<h2>3의 배수 찾기</h2>
+
+	<script>
+
+		var i; //for문 i 변수
+		//입력값 변수
+		var userNumber = parseInt(prompt("몇 까지의 3의 배수를 찾을까요?"));
+		//3의 배수의 갯수 세는 변수
+		var count = 0;
+		//입력값을 취소하지 않는다면 실행해라
+		if(userNumber !== null){
+			//갯수는 1부터 카운트하고, 입력값 이하, 증가한다.
+			for(i = 1; i <= userNumber; i++){
+				//i와 3의 나머지가 0이면(나머지가 1이면 뺀다.)
+				//count(갯수)값을 증가시키고
+				//추출된 i 값을 나열한다.
+				if(i % 3 === 0){
+					count++;
+					document.write(i + ", ");
+				}
+			}//p로 감싸고 입력값 추출, count 값(증가시키지 않고 순수히 갯수만 추출) 추출.
+			document.write("<p>" + userNumber + "까지 3의 배수의 갯수 : " + count + "</p>");
+		}
+
+	</script>
+</body>
+</html>
