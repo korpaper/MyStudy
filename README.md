@@ -1,1 +1,1 @@
-What I Learned everyday.
+What I Learned everyday about Javascript.
