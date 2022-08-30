@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoisting</title>
+</head>
+<body>
+    
+    <script>
+//변수를 따로 기억해둠.
+//변수 실행 전 이런 변수가 있구나 하고 기억해 두기 때문에 마치 선언한 것과 같은 효과.
+        var x = 10;
+
+        function displayNumber() {
+            console.log('x is ' + x);
+            console.log('y is ' + y); // undefined : 변수가 선언 되었지만 아직 값이 할당되지 않음
+        var y = 20;
+        }
+        displayNumber();
+
+        // 아래처럼 인식하는 것과 같음.
+
+        var x = 10;
+
+        function displayNumber(){
+            var y;
+            console.log('x is ' + x);
+            console.log('y is ' + y);
+            y = 20;
+        }
+        displayNumber();
+
+    </script>
+</body>
+</html>
