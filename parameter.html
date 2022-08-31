@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parameter</title>
+</head>
+<body>
+    <script>		
+                        //매개변수 2개
+		function addNumber(num1, num2){ 								
+			var sum = num1 + num2;//두 수를 더하여 sum에 저장	
+			return sum;//반환하는 값 지정(결과값을 함수 밖에서 사용하기 위해)
+		}
+        var result = addNumber(2, 3);//함수호출, 괄호안의 숫자가 '인수'
+        document.write("두 수를 더 한 값 : " + result);
+    /* 1.function 이라는 예약어를 만나면 함수를 선언하는 부분이란 걸 인식하고 함수 블록을 해석함.(아직 실행 x)
+       2.addNumber(2, 3)을 만나면 해석해 두었던 addNumber() 함수를 실행.
+       3.addNumber() 함수에서 2는 num1 로, 3은 num2 로 넘기고! 더한 값을 sum 변수에 저장.
+       4.함수 실행이 다 끝나면 결과값 sum을 함수 호출 위치. 즉, var result 로 넘김. -> return 때문에 가능.
+       5.넘겨받은 결과값을 result 라는 변수에 저장.
+       6.result 변수에 있는 값을 화면에 표시.*/
+
+       //함수 안에 있는 변수 sum 은 단순히 결과값을 저장했다가 반환하므로 줄여서 작성 가능.(3번 생략)
+        function addNumber(num1, num2){
+            return num1 + num2;
+        }
+        var result = addNumber(2, 3);
+        document.write('두 수를 더한 값 : ' + result);
+
+	</script>
+</body>
+</html>
