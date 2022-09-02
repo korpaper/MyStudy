@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+
+        //즉시 실행 함수, 함수를 실행하는 순간에 해석, 호출하지 않았지만 실행
+        /*(function(){
+            let userName = prompt('이름을 입력하세요.');
+            document.write('안녕하세요. ' + userName + ' 님.');
+        }());*/
+        //매개 변수를 사용하는 즉시 실행 함수
+        //선언 부분 끝에 인수를 넣어줌.
+        (function(a, b){
+            sum = a + b;
+        }(100, 200)); //인수
+        document.write('함수 실행 결과 : ' + sum);
+
+    </script>
+</body>
+</html>
