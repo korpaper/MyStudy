@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>method1</title>
+</head>
+<body>
+
+    <script>
+        //concat : 배열끼리 합침
+        //어느 배열을 기준으로 하느냐에 따라 순서가 달라짐
+        let nums = [1, 2, 3];
+        let chars = ['a', 'b', 'c', 'd'];
+
+        let numsChars = nums.concat(chars);
+        let charsNums = chars.concat(nums);
+
+        document.write('nums + chars = ' + numsChars + '<br> chars + nums = ' + charsNums);
+
+        //join : 배열 안의 요소를 연결해서 하나의 문자열로 만듬.
+        // '/' 구분자 넣을 수 있음 -> 따로 안넣으면 ',' 로 표시됨
+        let num = [1, 2, 3];
+        let char = ['a', 'b', 'c', 'd'];
+
+        let string1 = num.join();
+        document.write('<br>');
+        document.write('구분자 없이 : ' + string1);
+        document.write('<br>');
+        let string2 = char.join('/');
+        document.write("'/' 구분자 지정 : ", string2);
+
+        //push, unshift : 배열 맨 뒤, 맨 앞에 요소 추가
+        //추가 후 배열 바뀌는거 주의
+        let num1 = [1, 2, 3];
+
+        let = ret1 = num1.push(4, 5);//배열 맨 끝에 새로운 요소 추가
+        document.write('<br>');
+        document.write('length : ', ret1, ' | 배열 : ', num1);
+        document.write('<br>');
+        let ret2 = num1.unshift(0);//배열 맨 앞에 새로운 요소 추가
+        document.write('length : ', ret2, ' | 배열 : ', num1);
+
+
+    </script>
+    
+</body>
+</html>
